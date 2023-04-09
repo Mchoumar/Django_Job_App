@@ -1,8 +1,8 @@
 from django.db import models
 
 
-# Table model for the user data
 class Form(models.Model):
+    """Table model for the user data"""
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)
     email = models.EmailField()
